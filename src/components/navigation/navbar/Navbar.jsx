@@ -7,10 +7,10 @@ const Navbar = () => {
         <nav className="navbar fixed-top">
             <div className="container">
                 <div>
-                    <Link to="/" className="navbar-brand text-light"><img src="https://cdn-icons-png.flaticon.com/512/4063/4063742.png" alt="Logo" className="navbar-icon" />Shnurok </Link>
+                    <Link to="/" className="navbar-brand text-light"><img src="https://cdn-icons-png.flaticon.com/512/861/861054.png" alt="Logo" className="navbar-icon" />Preuß Gartenpflege</Link>
                 </div>
                 <div className="navbar-links">
-                    <p>button</p>
+                    <a className="btn" href="/">о нас</a>
                 </div>
             </div>
         </nav>
