@@ -1,0 +1,23 @@
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-m {
+    display: flex;
+    flex-direction: column; /* Гарантирует, что контент занимает всё пространство */
+    flex: 1;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-top: 56px; /* Отступ для фиксированного navbar */
+}
+
+.content {
+    color: var(--text-color);
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    margin-top: 56px;
+    background-color: #F5F1E3;
+}

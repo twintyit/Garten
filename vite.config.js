@@ -10,7 +10,7 @@ export default defineConfig({
       targets: [
         {
           src: "CNAME",
-          dest: ".", // Копировать в корень dist
+          dest: ".",
         },
       ],
     }),

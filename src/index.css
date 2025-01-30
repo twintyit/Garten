@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+:root {
+    --nav-color: #2E7D32;
+    --background-color: #F5F1E3;
+    --footer-color: #6D4C41;
+    --button-color: #4CAF50;
+    --button-hover-color: #A5D6A7;
+    --text-color: #424242;
+    --about-color: #FFD54F;
+}

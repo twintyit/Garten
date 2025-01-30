@@ -1,13 +1,16 @@
 import './App.css'
-import {Home} from "./pages/home-page/HomePage.jsx";
+import {HomePage} from "./pages/home-page/HomePage.jsx";
+import Layout from "./Layout.jsx";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
 
   return (
-    <>
-        <div>Hello world</div>
-        <Home></Home>
-    </>
+      <Layout>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+      </Layout>
   )
 }
 

@@ -1,0 +1,53 @@
+.footer {
+    background-color: #6D4C41;
+    padding: 20px 0;
+    color: white;
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: var(--button-color);
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer button {
+    padding: 10px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: var(--button-hover-color);
+}
