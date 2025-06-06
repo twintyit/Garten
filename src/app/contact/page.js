@@ -2,6 +2,7 @@
 
 import { Box, Container, Typography, TextField, Button } from '@mui/material'
 import Link from 'next/link'
+import ContactForm from "@/components/ContactForm";
 
 export default function ContactPage() {
     return (
@@ -44,44 +45,7 @@ export default function ContactPage() {
                     Oder nutzen Sie einfach das folgende Formular:
                 </Typography>
 
-                {/* Форма */}
-                <form>
-                    <TextField
-                        label="Ihr Name"
-                        fullWidth
-                        required
-                        margin="normal"
-                    />
-                    <TextField
-                        label="E-Mail-Adresse"
-                        type="email"
-                        fullWidth
-                        required
-                        margin="normal"
-                    />
-                    <TextField
-                        label="Nachricht"
-                        fullWidth
-                        required
-                        margin="normal"
-                        multiline
-                        rows={4}
-                    />
-                    <Button
-                        type="submit"
-                        variant="contained"
-                        fullWidth
-                        sx={{
-                            mt: 3,
-                            backgroundColor: 'var(--green)',
-                            '&:hover': { backgroundColor: 'var(--green-light)' },
-                            fontSize: '1rem',
-                            py: 1.2
-                        }}
-                    >
-                        Nachricht senden
-                    </Button>
-                </form>
+                <ContactForm />
             </Container>
         </Box>
     )

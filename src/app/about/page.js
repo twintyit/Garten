@@ -42,7 +42,7 @@ export default function AboutPage() {
                     <Box sx={{ flex: 1 }}>
                         <Image
                             src="/about-1.png"
-                            alt="Team bei der Gartenarbeit"
+                            alt="Gartenarbeit in Frankfurt und Offenbach"
                             width={600}
                             height={400}
                             style={{
@@ -81,7 +81,7 @@ export default function AboutPage() {
                     <Box sx={{ flex: 1 }}>
                         <Image
                             src="/about-2.png"
-                            alt="Team bei der Gartenarbeit"
+                            alt="Gartenarbeit in Frankfurt und Offenbach"
                             width={600}
                             height={400}
                             style={{
@@ -96,7 +96,13 @@ export default function AboutPage() {
                 </Box>
 
                 {/* Нижний блок */}
-                <Box textAlign="center"   sx={{py: 3, bgcolor:'var(--green)', color:'var(--white)'}}>
+                <Box textAlign="center"
+                     sx={{
+                         py: 3,
+                         bgcolor:'var(--green)',
+                         color:'var(--white)',
+                         borderRadius: '10px'
+                }}>
                     <Typography variant="h5" sx={{ fontWeight: 600, mb: 2 }}>
                         Warum Preuss Garten?
                     </Typography>
@@ -109,8 +115,14 @@ export default function AboutPage() {
                     </Typography>
                 </Box>
 
-            <Box sx={{ textAlign: 'center', mt: 6, px: 2 }}>
-                <Typography variant="h5" sx={{ fontStyle: 'italic', fontWeight: 600, color: 'var(--green)', mb: 2 }}>
+            <Box sx={{ textAlign: 'center', mt: 6, px: 2,  }}>
+                <Typography variant="h5"
+                            sx={{
+                                fontStyle: 'italic',
+                                fontWeight: 600,
+                                color: 'var(--green)',
+                                mb: 2,
+                }}>
                     „Ein schöner Garten ist wie ein zweites Zuhause.“
                 </Typography>
 
@@ -121,8 +133,12 @@ export default function AboutPage() {
                 <Button
                     variant="contained"
                     href="/contact"
-                    sx={{ backgroundColor: 'var(--green)', fontSize: '1rem', px: 4, py: 1 }}
-                >
+
+                    Kontaktformula
+                    sx={{ backgroundColor: 'var(--green)',
+                        '&:hover': { backgroundColor: 'var(--green-light)' },
+                        fontSize: '1rem', px: 4, py: 1
+                }}>
                     Kontaktieren Sie uns
                 </Button>
             </Box>

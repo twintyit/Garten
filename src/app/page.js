@@ -2,12 +2,10 @@
 
 import { Box, Container, Typography, Button } from '@mui/material'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Home() {
-  return (
+    return (
         <Box>
-            {/* Hero Section */}
             <Box
                 sx={{
                     backgroundImage: 'url("/hero-garden.jpg")',
@@ -17,7 +15,7 @@ export default function Home() {
                     textAlign: 'center',
                 }}
             >
-                <Container>
+                <Box>
                     <Box
                         sx={{
                             display: 'flex',
@@ -25,23 +23,20 @@ export default function Home() {
                             alignItems: 'center',
                             flexWrap: 'wrap',
                             gap: 2,
-                            mb: 4,
                         }}
                     >
-                        {/* Левая иконка - скрывается на мобильных */}
                         <Box
                             component="img"
                             src="/home-icon-1.png"
-                            alt="home-icon"
+                            alt="Gartenarbeit in Frankfurt und Offenbach"
                             sx={{
                                 maxHeight: 120,
-                                display: { xs: 'none', sm: 'block' }, // скрыть на xs
+                                display: { xs: 'none', sm: 'block' },
                             }}
                         />
 
-                        {/* Центрированный текст */}
                         <Box sx={{ textAlign: 'center', mx: 2, flex: '1 1 300px' }}>
-                            <Typography variant='h4' sx={{ fontWeight: 'bold', mb: 2 }}>
+                            <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
                                 Gartenpflege von Kristian Preuss
                             </Typography>
 
@@ -60,27 +55,32 @@ export default function Home() {
                                 oder
                             </Typography>
 
-                            <Button variant="contained" href="/contact" sx={{ backgroundColor: 'var(--green)' }}>
+                            <Button
+                                variant="contained"
+                                href="/contact"
+                                sx={{
+                                    backgroundColor: 'var(--green)',
+                                    '&:hover': { backgroundColor: 'var(--green-light)' },
+                                }}>
                                 Jetzt anfragen
                             </Button>
                         </Box>
 
-                        {/* Правая иконка - скрывается на мобильных */}
                         <Box
                             component="img"
                             src="/home-icon-2.png"
-                            alt="home-icon"
+                            alt="Gartenarbeit in Frankfurt und Offenbach"
                             sx={{
                                 maxHeight: 120,
-                                display: { xs: 'none', sm: 'block' }, // скрыть на xs
+                                display: { xs: 'none', sm: 'block' },
                             }}
                         />
                     </Box>
-                </Container>
+                </Box>
             </Box>
 
             {/* About Short Section */}
-            <Box sx={{ bgcolor: 'var(--green)', py: 5, color: 'var(--white)' }}>
+            <Box sx={{ bgcolor: 'var(--green)', py: 4, color: 'var(--white)', borderRadius: '10px' }}>
                 <Container>
                     <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }} gutterBottom>
                         Über uns
@@ -88,68 +88,78 @@ export default function Home() {
                     <Typography variant="body1" sx={{ fontSize: '1.2rem' }}>
                         Wir sind ein kleines Familienunternehmen aus Offenbach mit über 5 Jahren Erfahrung in Gartenpflege.
                         Zuverlässigkeit, Sauberkeit und faire Preise stehen bei uns an erster Stelle.
+                        <br /><br />
+                        Unser Team bietet professionelle Gartenarbeit und Gartenpflege in <strong>Offenbach</strong>,
+                        <strong> Frankfurt</strong>, <strong>Hanau</strong>, <strong>Neu-Isenburg</strong>,
+                        <strong> Mühlheim</strong> und Umgebung an.
                     </Typography>
                 </Container>
             </Box>
 
             {/* Services Section */}
-            <Container sx={{ py: 6 }}>
+            <Box sx={{ py: 4 }}>
                 <Box
                     sx={{
                         display: 'flex',
                         flexDirection: { xs: 'column', md: 'row' },
-
                         gap: 4,
                         mt: 3,
                     }}
                 >
-                    {/* Список слева */}
                     <Box sx={{ flex: 1 }}>
                         <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }} gutterBottom>
                             Unsere Leistungen
                         </Typography>
-                        <ul style={{fontSize: '1.2rem', lineHeight: '2', margin: 0, paddingLeft: '1.2rem'}}>
+                        <ul style={{ fontSize: '1.2rem', lineHeight: '2', margin: 0, paddingLeft: '1.2rem' }}>
                             <li>✅ Rasen mähen und Pflege</li>
                             <li>✂️ Hecken- und Baumschnitt</li>
                             <li>🧹 Gartenreinigung & Laubentsorgung</li>
                             <li>🌼 Bepflanzung und Gestaltung</li>
                             <li>📦 Entsorgung von Gartenabfällen</li>
+                            <li>🌍 Gartenservice in Frankfurt, Offenbach, Hanau, Neu-Isenburg, Mühlheim & Umgebung  </li>
                             <li>…und vieles mehr!</li>
                         </ul>
                     </Box>
 
-                    {/* Картинка справа */}
                     <Box sx={{ flex: 1, textAlign: 'center' }}>
                         <img
-                            src="/garden.png" // добавь изображение в public
-                            alt="Gartenarbeit"
-                            style={{ maxWidth: '100%', borderRadius: '12px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }}
+                            src="/garden.png"
+                            alt="Gartenarbeit in Frankfurt und Offenbach"
+                            style={{
+                                maxWidth: '100%',
+                                borderRadius: '12px',
+                                boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+                            }}
                         />
                     </Box>
                 </Box>
-            </Container>
+            </Box>
 
             {/* CTA Section */}
             <Container
                 sx={{
                     py: 6,
-                    border:'1px solid var(--green)',
+                    border: '1px solid var(--green)',
                     borderRadius: '10px',
                     display: 'flex',
-                    flexDirection:'column',
-                    alignItems:'center'
-
-            }}>
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                }}
+            >
                 <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold' }} gutterBottom>
                     Kostenloses Angebot anfordern
                 </Typography>
                 <Typography variant="body1" sx={{ mb: 2 }}>
                     Kontaktieren Sie uns unverbindlich – wir freuen uns auf Ihre Anfrage!
                 </Typography>
-                <Button variant="contained" href="/contact" sx={{bgcolor:'var(--green)'}}>
+                <Button variant="contained" href="/contact"
+                        sx={{
+                            backgroundColor: 'var(--green)',
+                            '&:hover': { backgroundColor: 'var(--green-light)' },
+                        }}>
                     Kontaktformular öffnen
                 </Button>
             </Container>
         </Box>
-  )
+    )
 }
