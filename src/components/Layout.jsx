@@ -55,6 +55,7 @@ export default function Layout({ children }) {
                             borderRadius: 0,
                             boxShadow: 0,
                             width: '100%',
+                            py: 4,
                         }}
                     >
                         {children}

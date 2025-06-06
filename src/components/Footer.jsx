@@ -11,26 +11,55 @@ export default function Footer() {
                         display: 'flex',
                         flexDirection: { xs: 'column', sm: 'row' },
                         justifyContent: 'space-between',
-                        gap: 3,
+                        gap: 4,
+                        flexWrap: 'wrap',
                     }}
                 >
-                    {/* Логотип и адрес */}
-                    <Box display="flex" flexDirection="column" alignItems="center">
-                        <Link href="/" style={{ textDecoration: 'none', marginBottom: 1 }}>
+                    {/* Логотип — строго слева */}
+                    <Box>
+                        <Link href="/" style={{ textDecoration: 'none', alignItems: 'center' }}>
                             <img
                                 src="/logo-big.png"
                                 alt="Preuss Garten"
-                                style={{
-                                    height: '64px',
-                                    width: 'auto',
-                                }}
+                                style={{ height: '64px', width: 'auto' }}
                             />
                         </Link>
-                        <Typography variant="body2" sx={{ fontSize: '1.1rem' }}>Strasse 45</Typography>
-                        <Typography variant="body2" sx={{ fontSize: '1.1rem' }}>Offenbach am Main</Typography>
                     </Box>
 
+                    {/* Контактная информация */}
+                    <Box>
+                        <Typography variant="h6" sx={{ mb: 1 }}>Kontakt</Typography>
+                        <Typography variant="body2" sx={{ fontSize: '1.1rem' }}>
+                            Strasse 45
+                        </Typography>
+                        <Typography variant="body2" sx={{ fontSize: '1.1rem', mb: 1 }}>
+                            Offenbach am Main
+                        </Typography>
+                        <Link href="tel:01713300309" style={{ textDecoration: 'none' }}>
+                            <Typography
+                                sx={{
+                                    color: 'white',
+                                    fontSize: '1.1rem',
+                                    '&:hover': { textDecoration: 'underline' },
+                                }}
+                            >
+                                Telefon: 0171 3300309
+                            </Typography>
+                        </Link>
+                        <Link href="mailto:kristian@example.de" style={{ textDecoration: 'none' }}>
+                            <Typography
+                                sx={{
+                                    color: 'white',
+                                    fontSize: '1.1rem',
+                                    '&:hover': { textDecoration: 'underline' },
+                                }}
+                            >
+                                E-Mail: kristian@example.de
+                            </Typography>
+                        </Link>
+                    </Box>
 
+                    {/* Навигация */}
                     <Box>
                         <Typography variant="h6" sx={{ mb: 1 }}>Navigation</Typography>
                         <Link href="/" style={{ textDecoration: 'none' }}>
@@ -38,9 +67,7 @@ export default function Footer() {
                                 sx={{
                                     color: 'white',
                                     fontSize: '1.1rem',
-                                    '&:hover': {
-                                        textDecoration: 'underline',
-                                    },
+                                    '&:hover': { textDecoration: 'underline' },
                                 }}
                             >
                                 Start
@@ -51,9 +78,7 @@ export default function Footer() {
                                 sx={{
                                     color: 'white',
                                     fontSize: '1.1rem',
-                                    '&:hover': {
-                                        textDecoration: 'underline',
-                                    },
+                                    '&:hover': { textDecoration: 'underline' },
                                 }}
                             >
                                 Über uns
@@ -64,9 +89,7 @@ export default function Footer() {
                                 sx={{
                                     color: 'white',
                                     fontSize: '1.1rem',
-                                    '&:hover': {
-                                        textDecoration: 'underline',
-                                    },
+                                    '&:hover': { textDecoration: 'underline' },
                                 }}
                             >
                                 Kontakt
@@ -74,6 +97,7 @@ export default function Footer() {
                         </Link>
                     </Box>
 
+                    {/* Правовая информация */}
                     <Box>
                         <Typography variant="h6" sx={{ mb: 1 }}>Rechtliches</Typography>
                         <Link href="/impressum" style={{ textDecoration: 'none' }}>
@@ -81,9 +105,7 @@ export default function Footer() {
                                 sx={{
                                     color: 'white',
                                     fontSize: '1.1rem',
-                                    '&:hover': {
-                                        textDecoration: 'underline',
-                                    },
+                                    '&:hover': { textDecoration: 'underline' },
                                 }}
                             >
                                 Impressum
@@ -94,9 +116,7 @@ export default function Footer() {
                                 sx={{
                                     color: 'white',
                                     fontSize: '1.1rem',
-                                    '&:hover': {
-                                        textDecoration: 'underline',
-                                    },
+                                    '&:hover': { textDecoration: 'underline' },
                                 }}
                             >
                                 Datenschutz
@@ -106,8 +126,11 @@ export default function Footer() {
                 </Box>
 
                 {/* Копирайт */}
-                <Typography variant="body2" sx={{ textAlign: 'center', fontSize: '1rem', marginTop: '1rem' }}>
-                    © {new Date().getFullYear()} Gartenpflege Preuss. Alle Rechte vorbehalten.
+                <Typography
+                    variant="body2"
+                    sx={{ textAlign: 'center', fontSize: '1rem', mt: 4 }}
+                >
+                    © {new Date().getFullYear()} Kristian Preuss. Alle Rechte vorbehalten.
                 </Typography>
             </Container>
         </Box>
