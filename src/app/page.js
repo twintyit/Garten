@@ -37,7 +37,7 @@ export default function Home() {
 
                         <Box sx={{ textAlign: 'center', mx: 2, flex: '1 1 300px' }}>
                             <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
-                                Gartenpflege von Kristian Preuss
+                                Gartenpflege von Christian Preuss
                             </Typography>
 
                             <Typography variant="h6" sx={{ mb: 4 }}>
@@ -86,7 +86,7 @@ export default function Home() {
                         Über uns
                     </Typography>
                     <Typography variant="body1" sx={{ fontSize: '1.2rem' }}>
-                        Wir sind ein kleines Familienunternehmen aus Offenbach mit über 5 Jahren Erfahrung in Gartenpflege.
+                        Wir sind ein kleines Familienunternehmen aus Wiesbaden mit über 25 Jahren Erfahrung in Gartenpflege.
                         Zuverlässigkeit, Sauberkeit und faire Preise stehen bei uns an erster Stelle.
                         <br /><br />
                         Unser Team bietet professionelle Gartenarbeit und Gartenpflege in <strong>Offenbach</strong>,

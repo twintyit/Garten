@@ -6,9 +6,9 @@ const geistSans = Geist({variable: "--font-geist-sans", subsets: ["latin"],})
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] })
 
 export const metadata = {
-    title: "Gartenpflege in Offenbach & Frankfurt | Preuss Gartenservice",
+    title: "Gartenpflege im Rhein‑Main‑Gebiet (Frankfurt, Wiesbaden, Hanau & Umgebung)| Preuss Gartenservice",
     description:
-        "Professionelle Gartenpflege und Gartenarbeit in Offenbach, Frankfurt, Hanau & Umgebung. Rasen mähen, Hecken schneiden, Gartenreinigung & mehr.",
+        "Professionelle Gartenpflege und Gartenarbeit in Wiesbaden, Frankfurt, Hanau & Umgebung. Rasen mähen, Hecken schneiden, Gartenreinigung & mehr.",
     keywords: [
         "Gartenpflege Offenbach",
         "Gartenarbeit Frankfurt",
@@ -22,7 +22,7 @@ export const metadata = {
     icons: {
         icon: '/favicon.png',
     },
-    authors: [{ name: 'Kristian Preuss', url: 'https://preuss-garten.de' }],
+    authors: [{ name: 'Christian Preuss', url: 'https://preuss-garten.de' }],
 }
 
 export default function RootLayout({ children }) {
@@ -43,9 +43,9 @@ export default function RootLayout({ children }) {
                     telephone: "0171 3300309",
                     address: {
                         "@type": "PostalAddress",
-                        streetAddress: "Strasse 45",
-                        addressLocality: "Offenbach am Main",
-                        postalCode: "63065",
+                        streetAddress: "Mainzer Str. 75",
+                        addressLocality: "Wiesbaden",
+                        postalCode: "55252",
                         addressCountry: "DE",
                     },
                     areaServed: [
@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
                         "Maintal",
                         "Dreieich"
                     ],
-                    description: "Gartenarbeit und Gartenpflege in Offenbach und Frankfurt vom Profi.",
+                    description: "Professionelle Gartenpflege und Gartenarbeit in Wiesbaden, Frankfurt, Hanau & Umgebung",
                 }),
             }}
         />

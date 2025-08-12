@@ -68,13 +68,13 @@ export default function DatenschutzPage() {
             <Typography gutterBottom>
                 Verantwortliche Stelle:
                 <br />
-                Max Mustermann
+                Christian Preuss
                 <br />
-                Musterstraße 1
+                Mainzer Str. 75
                 <br />
-                12345 Musterstadt
+                63189, Wiesbaden
                 <br />
-                E-Mail: kontakt@example.com
+                E-Mail: preussgarten@gmail.com
             </Typography>
 
             <Typography variant="subtitle1" gutterBottom mt={2}>

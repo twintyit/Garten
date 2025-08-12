@@ -28,63 +28,75 @@ export default function Footer() {
 
                     {/* Контактная информация */}
                     <Box>
-                        <Typography variant="h6" sx={{ mb: 1 }}>Kontakt</Typography>
-                        <Typography variant="body2" sx={{ fontSize: '1.1rem' }}>
-                            Strasse 45
+                        <Typography variant="h6" sx={{mb: 1}}>Kontakt</Typography>
+                        <Typography variant="body2" sx={{fontSize: '1.1rem'}}>
+                            Mainzer Str. 75
                         </Typography>
-                        <Typography variant="body2" sx={{ fontSize: '1.1rem', mb: 1 }}>
-                            Offenbach am Main
+                        <Typography variant="body2" sx={{fontSize: '1.1rem', mb: 1}}>
+                            63189, Wiesbaden
                         </Typography>
-                        <Link href="tel:01713300309" style={{ textDecoration: 'none' }}>
+                        <a href="tel:+491713300309" style={{textDecoration: 'none'}}>
                             <Typography
                                 sx={{
                                     color: 'white',
                                     fontSize: '1.1rem',
-                                    '&:hover': { textDecoration: 'underline' },
+                                    '&:hover': {textDecoration: 'underline'},
                                 }}
                             >
                                 Telefon: 0171 3300309
                             </Typography>
-                        </Link>
-                        <Link href="mailto:kristian@example.de" style={{ textDecoration: 'none' }}>
+                        </a>
+                        <a
+                            href="mailto:preussgarten@gmail.com?subject=Neue%20Nachricht%20von%20der%20Website"
+                            style={{textDecoration: 'none'}}
+                        >
                             <Typography
-                                sx={{
-                                    color: 'white',
-                                    fontSize: '1.1rem',
-                                    '&:hover': { textDecoration: 'underline' },
-                                }}
+                                sx={{color: 'white', fontSize: '1.1rem', '&:hover': {textDecoration: 'underline'}}}
                             >
-                                E-Mail: kristian@example.de
+                                E‑Mail: preussgarten@gmail.com
                             </Typography>
-                        </Link>
+                        </a>
+
+                        <a
+                            href="https://g.page/r/CaHskTSOjBK0EBM/review"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{textDecoration: 'none'}}
+                        >
+                            <Typography
+                                sx={{color: 'white', fontSize: '1.1rem', '&:hover': {textDecoration: 'underline'}, marginTop: 'px'}}
+                            >
+                                Bewertung schreiben
+                            </Typography>
+                        </a>
                     </Box>
 
                     {/* Навигация */}
                     <Box>
-                        <Typography variant="h6" sx={{ mb: 1 }}>Navigation</Typography>
-                        <Link href="/" style={{ textDecoration: 'none' }}>
+                        <Typography variant="h6" sx={{mb: 1}}>Navigation</Typography>
+                        <Link href="/" style={{textDecoration: 'none'}}>
                             <Typography
                                 sx={{
                                     color: 'white',
                                     fontSize: '1.1rem',
-                                    '&:hover': { textDecoration: 'underline' },
+                                    '&:hover': {textDecoration: 'underline'},
                                 }}
                             >
-                                Start
+                            Start
                             </Typography>
                         </Link>
-                        <Link href="/about" style={{ textDecoration: 'none' }}>
+                        <Link href="/about" style={{textDecoration: 'none'}}>
                             <Typography
                                 sx={{
                                     color: 'white',
                                     fontSize: '1.1rem',
-                                    '&:hover': { textDecoration: 'underline' },
+                                    '&:hover': {textDecoration: 'underline'},
                                 }}
                             >
                                 Über uns
                             </Typography>
                         </Link>
-                        <Link href="/contact" style={{ textDecoration: 'none' }}>
+                        <Link href="/contact" style={{textDecoration: 'none' }}>
                             <Typography
                                 sx={{
                                     color: 'white',
@@ -130,7 +142,7 @@ export default function Footer() {
                     variant="body2"
                     sx={{ textAlign: 'center', fontSize: '1rem', mt: 4 }}
                 >
-                    © {new Date().getFullYear()} Kristian Preuss. Alle Rechte vorbehalten.
+                    © {new Date().getFullYear()} Christian Preuss. Alle Rechte vorbehalten.
                 </Typography>
             </Container>
         </Box>

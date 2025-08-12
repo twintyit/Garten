@@ -74,10 +74,10 @@ export default function ContactForm() {
 
         emailjs
             .send(
-                'service_an2au6b',
-                'template_iddlki6',
+                'service_syyyv9q',
+                'template_pqja7au',
                 payload,
-                '08W-Km78FhwenmvqW'
+                'KJoO_KeTWoeuxXO4D'
             )
             .then(() => {
                 setSuccess(true)

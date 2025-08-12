@@ -15,18 +15,18 @@ export default function ImpressumPage() {
                 Angaben gemäß § 5 TMG
             </Typography>
             <Typography>
-                Cristian Preuss<br />
+                Christian Preuss<br />
                 Gartenservice Preuss<br />
-                Musterstraße 45<br />
-                63065 Offenbach am Main
+                Mainzer Str. 75<br />
+                63189, Wiesbaden
             </Typography>
 
             <Typography variant="h6" sx={{ mt: 4, mb: 1 }}>
                 Kontakt
             </Typography>
             <Typography>
-                Telefon: 0151 23456789<br />
-                E-Mail: info@preuss-garten.de
+                Telefon: 0171 3300309<br />
+                E-Mail: preussgarten@gmail.com
             </Typography>
 
             <Typography variant="h6" sx={{ mt: 4, mb: 1 }}>

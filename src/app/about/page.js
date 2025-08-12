@@ -31,11 +31,12 @@ export default function AboutPage() {
                             Wer wir sind
                         </Typography>
                         <Typography variant="body1" sx={{ color: 'var(--text-dark)', fontSize: '1.1rem', mb: 2 }}>
-                            Willkommen bei <strong>Preuss Garten</strong> – Ihrem zuverlässigen Partner für professionelle Gartenpflege in Offenbach und Umgebung.
+                            Willkommen bei <strong>Preuss Garten</strong> – Ihrem zuverlässigen Partner für professionelle Gartenpflege in <strong>Offenbach,
+                            Frankfurt, Wiesbaden und Umgebung.</strong>
                         </Typography>
 
                         <Typography variant="body1" sx={{ color: 'var(--text-dark)', fontSize: '1.1rem' }}>
-                            Wir sind ein Familienbetrieb mit Herz und Hingabe für alles, was grün ist. Seit über 5 Jahren bringen wir Gärten zum Blühen.
+                            Wir sind ein Familienbetrieb mit Herz und Hingabe für alles, was grün ist. Seit über 25 Jahren bringen wir Gärten zum Blühen.
                         </Typography>
                     </Box>
 
