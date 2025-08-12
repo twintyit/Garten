@@ -29,13 +29,13 @@ export default function ImpressumPage() {
                 E-Mail: preussgarten@gmail.com
             </Typography>
 
-            <Typography variant="h6" sx={{ mt: 4, mb: 1 }}>
-                Umsatzsteuer-ID
-            </Typography>
-            <Typography>
-                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                DE123456789
-            </Typography>
+            {/*<Typography variant="h6" sx={{ mt: 4, mb: 1 }}>*/}
+            {/*    Umsatzsteuer-ID*/}
+            {/*</Typography>*/}
+            {/*<Typography>*/}
+            {/*    Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />*/}
+            {/*    DE123456789*/}
+            {/*</Typography>*/}
 
             <Typography variant="h6" sx={{ mt: 4, mb: 1 }}>
                 Haftung für Inhalte
