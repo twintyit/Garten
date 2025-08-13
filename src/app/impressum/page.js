@@ -28,14 +28,31 @@ export default function ImpressumPage() {
                 Telefon: 0171 3300309<br />
                 E-Mail: preussgarten@gmail.com
             </Typography>
+            
 
-            {/*<Typography variant="h6" sx={{ mt: 4, mb: 1 }}>*/}
-            {/*    Umsatzsteuer-ID*/}
-            {/*</Typography>*/}
-            {/*<Typography>*/}
-            {/*    Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />*/}
-            {/*    DE123456789*/}
-            {/*</Typography>*/}
+            <Typography variant="h6" sx={{ mt: 4, mb: 1 }}>
+                Registrierungen & Mitgliedschaften
+            </Typography>
+            <Box component="ul" sx={{ m: 0, pl: 2, listStyle: 'disc' }}>
+                <li>
+                    <Typography>IHK-Nr.: 16000694919</Typography>
+                </li>
+                <li>
+                    <Typography>HWK-Nr.: 117721</Typography>
+                </li>
+                <li>
+                    <Typography>Meisterbetrieb: 10000728</Typography>
+                </li>
+                <li>
+                    <Typography>HRB: 53140</Typography>
+                </li>
+                <li>
+                    <Typography>USt-ID: DE337009458</Typography>
+                </li>
+                <li>
+                    <Typography>Betriebsnummer: 77653369</Typography>
+                </li>
+            </Box>
 
             <Typography variant="h6" sx={{ mt: 4, mb: 1 }}>
                 Haftung für Inhalte
